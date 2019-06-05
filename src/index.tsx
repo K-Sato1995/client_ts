@@ -1,5 +1,5 @@
 import { ApolloProvider } from "react-apollo";
-import App from "./App";
+import App from "./components/App";
 import { client } from "./middleware";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
