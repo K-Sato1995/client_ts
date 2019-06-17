@@ -9,9 +9,9 @@
     "@types/react": "16.8.19",
     "@types/react-dom": "16.8.4",
     "apollo-boost": "^0.4.1",
-    "graphql": "^14.3.1",
     "react": "^16.8.6",
     "react-apollo": "^2.5.6",
+    "react-apollo-hooks": "^0.4.5",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
     "typescript": "3.5.1"
@@ -20,7 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "generate": "graphql-codegen --config codegen.yml"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,5 +37,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^1.2.1",
+    "@graphql-codegen/introspection": "^1.2.1",
+    "@graphql-codegen/typescript": "1.2.1",
+    "@graphql-codegen/typescript-operations": "^1.2.1",
+    "@graphql-codegen/typescript-react-apollo": "^1.2.1",
+    "graphql": "^14.3.1"
   }
 }
